@@ -55,7 +55,7 @@ public class Matrix {
 
     public double[][] addValue(double value) {
         nonZeroElements.forEach(element -> element.setValue(element.getValue() + value));
-        this.sparseElem = value;
+        this.sparseElem += value;
         return getAsArray();
     }
 
